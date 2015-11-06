@@ -1,15 +1,16 @@
-
 config.tx_extbase{
-    persistence{
-        classes{
-
-            Qinx\Qxaddress\Domain\Model\Address {
-                mapping {
-                    tableName = tt_address
-                    recordType = Tx_Qxaddress_Address
-                }
-            }
-            
-    	}
-    }
+	persistence{
+		classes{
+			Qinx\Qxaddress\Domain\Model\Address {
+				mapping {
+					tableName = tt_address
+					columns {
+						uid.mapOnProperty = uid
+						pid.mapOnProperty = pid
+						name.mapOnProperty = name
+					}
+				}
+			}
+		}
+	}
 }

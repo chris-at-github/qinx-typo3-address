@@ -38,50 +38,7 @@ class AddressController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
 	 * @var \Qinx\Qxaddress\Domain\Repository\AddressRepository
 	 * @inject
 	 */
-	protected $addressRepository = NULL;
-
-	/**
-	 * action list
-	 * 
-	 * @return void
-	 */
-	public function listAction() {
-		$addresses = $this->addressRepository->findAll();
-		$this->view->assign('addresses', $addresses);
-	}
-
-	/**
-	 * action show
-	 * 
-	 * @param \Qinx\Qxaddress\Domain\Model\Address $address
-	 * @return void
-	 */
-	public function showAction(\Qinx\Qxaddress\Domain\Model\Address $address) {
-		$this->view->assign('address', $address);
-	}
-
-	/**
-	 * action new
-	 * 
-	 * @param \Qinx\Qxaddress\Domain\Model\Address $newAddress
-	 * @ignorevalidation $newAddress
-	 * @return void
-	 */
-	public function newAction(\Qinx\Qxaddress\Domain\Model\Address $newAddress = NULL) {
-		$this->view->assign('newAddress', $newAddress);
-	}
-
-	/**
-	 * action create
-	 * 
-	 * @param \Qinx\Qxaddress\Domain\Model\Address $newAddress
-	 * @return void
-	 */
-	public function createAction(\Qinx\Qxaddress\Domain\Model\Address $newAddress) {
-		$this->addFlashMessage('The object was created. Please be aware that this action is publicly accessible unless you implement an access check. See <a href="http://wiki.typo3.org/T3Doc/Extension_Builder/Using_the_Extension_Builder#1._Model_the_domain" target="_blank">Wiki</a>', '', \TYPO3\CMS\Core\Messaging\AbstractMessage::ERROR);
-		$this->addressRepository->add($newAddress);
-		$this->redirect('list');
-	}
+	protected $addressRepository = null;
 
 	/**
 	 * action index
@@ -89,7 +46,17 @@ class AddressController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
 	 * @return void
 	 */
 	public function indexAction() {
-		
+		$addresses = $this->addressRepository->findAll();
+		$this->view->assign('addresses', $addresses);
 	}
 
+	/**
+	 * action properties
+	 *
+	 * @param \Qinx\Qxaddress\Domain\Model\Address $address
+	 * @return void
+	 */
+	public function propertiesAction(\Qinx\Qxaddress\Domain\Model\Address $address) {
+		$this->view->assign('address', $address);
+	}
 }

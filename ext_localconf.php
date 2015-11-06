@@ -7,12 +7,12 @@ if (!defined('TYPO3_MODE')) {
 	'Qinx.' . $_EXTKEY,
 	'Pi1',
 	array(
-		'Address' => 'list, show, new, create, index',
+		'Address' => 'index, properties',
 		
 	),
 	// non-cacheable actions
 	array(
-		'Address' => 'create, ',
+		'Address' => '',
 		
 	)
 );
