@@ -1,0 +1,15 @@
+
+config.tx_extbase{
+    persistence{
+        classes{
+
+            Qinx\Qxaddress\Domain\Model\Address {
+                mapping {
+                    tableName = tt_address
+                    recordType = Tx_Qxaddress_Address
+                }
+            }
+            
+    	}
+    }
+}

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2015-11-06T06:44:24Z" product-name="qxaddress">
+		<header/>
+		<body>
+			<trans-unit id="tx_qxaddress_domain_model_address">
+				<source>Address</source>
+			</trans-unit>
+			<trans-unit id="tx_qxaddress_domain_model_address.name">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="tx_qxaddress_domain_model_address.latitude">
+				<source>Latitude</source>
+			</trans-unit>
+			<trans-unit id="tx_qxaddress_domain_model_address.longitude">
+				<source>Longitude</source>
+			</trans-unit>
+			<trans-unit id="tt_address.tx_extbase_type.Tx_Qxaddress_Address">
+				<source>Qinx Address Address</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>
