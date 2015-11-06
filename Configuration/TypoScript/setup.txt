@@ -1,4 +1,3 @@
-
 plugin.tx_qxaddress {
 	view {
 		templateRootPath = {$plugin.tx_qxaddress.view.templateRootPath}
@@ -14,36 +13,13 @@ plugin.tx_qxaddress {
 	}
 }
 
-plugin.tx_qxaddress._CSS_DEFAULT_STYLE (
-	textarea.f3-form-error {
-		background-color:#FF9F9F;
-		border: 1px #FF0000 solid;
+page.includeJSFooter {
+	qxAddressGoogleMaps = https://maps.googleapis.com/maps/api/js
+	qxAddressGoogleMaps {
+		external = 1
+		disableCompression = 1
+		excludeFromConcatenation = 1
 	}
 
-	input.f3-form-error {
-		background-color:#FF9F9F;
-		border: 1px #FF0000 solid;
-	}
-
-	.tx-qxaddress table {
-		border-collapse:separate;
-		border-spacing:10px;
-	}
-
-	.tx-qxaddress table th {
-		font-weight:bold;
-	}
-
-	.tx-qxaddress table td {
-		vertical-align:top;
-	}
-
-	.typo3-messages .message-error {
-		color:red;
-	}
-
-	.typo3-messages .message-ok {
-		color:green;
-	}
-
-)
+	qxAddressApplication = EXT:qxaddress/Resources/Public/Js/qxaddress.application.js
+}

@@ -1,3 +1,11 @@
-<div class="qx-address-map">
-	<div class="qx-address-map-container"></div>
+<div class="qx-address--map">
+	<div class="qx-address--map-container"></div>
+
+	<f:if condition="{addresses}">
+		<div class="qx-address--map-markers">
+			<f:for each="{addresses}" as="address">
+				<f:render partial="Address/Item" arguments="{address: address, class: 'qx-address--map-marker'}" />
+			</f:for>
+		</div>
+	</f:if>
 </div>
