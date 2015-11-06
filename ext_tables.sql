@@ -3,10 +3,7 @@
 #
 CREATE TABLE tt_address (
 
-	name varchar(255) DEFAULT '' NOT NULL,
-	latitude double(11,2) DEFAULT '0.00' NOT NULL,
-	longitude double(11,2) DEFAULT '0.00' NOT NULL,
-
-	tx_extbase_type varchar(255) DEFAULT '' NOT NULL,
+	latitude double(10,6) DEFAULT '0.000000' NOT NULL,
+	longitude double(10,6) DEFAULT '0.000000' NOT NULL,
 
 );
