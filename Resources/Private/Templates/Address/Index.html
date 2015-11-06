@@ -2,5 +2,6 @@
 
 <f:section name="Main">
 	<f:flashMessages />
-	<f:debug>{addresses}</f:debug>
+
+	<f:render partial="Map/Index" arguments="{addresses: addresses}" />
 </f:section>
