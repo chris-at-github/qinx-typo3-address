@@ -33,7 +33,7 @@ $qxAddressColumns = array(
 );
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_address', $qxAddressColumns);
-TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCATypes('tt_address', ',--div--;LLL:EXT:qxaddress/Resources/Private/Language/locallang_db.xlf:tx_qxaddress_domain_model_address,latitude,longitude');
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCATypes('tt_address', ',--div--;LLL:EXT:qxaddress/Resources/Private/Language/locallang_db.xlf:tx_qxaddress_domain_model_address,latitude,longitude');
 
 $GLOBALS['TCA']['tt_address']['ctrl']['sortby'] = 'sorting';
 $GLOBALS['TCA']['tt_address']['ctrl']['dividers2tabs'] = true;
