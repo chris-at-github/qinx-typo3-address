@@ -1,3 +1,5 @@
-<div class="qx-address--item {class}" data-qx-latitude="{address.latitude}" data-qx-longitude="{address.longitude}">
+{namespace qx=Qinx\Qxaddress\ViewHelpers}
+
+<qx:mapItem address="{address}" class="qx-address--item {class}">
 	<header>{address.name}</header>
-</div>
+</qx:mapItem>

@@ -23,11 +23,16 @@ $(function() {
 			var item 			= $(this);
 			var latitude	= parseFloat(item.data('qxLatitude'));
 			var longitude	= parseFloat(item.data('qxLongitude'));
-			var position	= new google.maps.LatLng(latitude, longitude)
-
-			var marker		= new google.maps.Marker({
+			var position	= new google.maps.LatLng(latitude, longitude);
+			var options 	= {
 				position: position
-			});
+			};
+
+			if(item.data('qxMarker') !== undefined) {
+				options.icon = item.data('qxMarker');
+			}
+
+			var marker		= new google.maps.Marker(options);
 
 			markers.push(marker);
 			bound.extend(position);
