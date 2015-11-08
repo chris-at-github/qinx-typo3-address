@@ -64,6 +64,16 @@
                             "propertyName": "longitude",
                             "propertyType": "Float",
                             "uid": "878538949406"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "",
+                            "propertyIsExcludeField": false,
+                            "propertyIsRequired": false,
+                            "propertyName": "marker",
+                            "propertyType": "Image",
+                            "uid": "919352801951"
                         }
                     ]
                 },
@@ -113,7 +123,7 @@
     },
     "wires": [],
     "log": {
-        "last_modified": "2015-11-06 06:44",
+        "last_modified": "2015-11-08 03:04",
         "extension_builder_version": "6.2.0",
         "be_user": "Christian Pschorr (1)"
     }

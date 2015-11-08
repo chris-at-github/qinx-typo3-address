@@ -54,6 +54,13 @@ class Address extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity {
 	protected $longitude = 0.0;
 
 	/**
+	 * marker
+	 * 
+	 * @var \TYPO3\CMS\Extbase\Domain\Model\FileReference
+	 */
+	protected $marker = null;
+
+	/**
 	 * Returns the name
 	 * 
 	 * @return string $name
@@ -108,6 +115,25 @@ class Address extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity {
 	 */
 	public function setLongitude($longitude) {
 		$this->longitude = $longitude;
+	}
+
+	/**
+	 * Returns the marker
+	 * 
+	 * @return \TYPO3\CMS\Extbase\Domain\Model\FileReference $marker
+	 */
+	public function getMarker() {
+		return $this->marker;
+	}
+
+	/**
+	 * Sets the marker
+	 * 
+	 * @param \TYPO3\CMS\Extbase\Domain\Model\FileReference $marker
+	 * @return void
+	 */
+	public function setMarker(\TYPO3\CMS\Extbase\Domain\Model\FileReference $marker) {
+		$this->marker = $marker;
 	}
 
 }

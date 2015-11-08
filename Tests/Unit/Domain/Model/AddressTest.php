@@ -120,4 +120,28 @@ class AddressTest extends \TYPO3\CMS\Core\Tests\UnitTestCase {
 			0.000000001
 		);
 	}
+
+	/**
+	 * @test
+	 */
+	public function getMarkerReturnsInitialValueForFileReference() {
+		$this->assertEquals(
+			NULL,
+			$this->subject->getMarker()
+		);
+	}
+
+	/**
+	 * @test
+	 */
+	public function setMarkerForFileReferenceSetsMarker() {
+		$fileReferenceFixture = new \TYPO3\CMS\Extbase\Domain\Model\FileReference();
+		$this->subject->setMarker($fileReferenceFixture);
+
+		$this->assertAttributeEquals(
+			$fileReferenceFixture,
+			'marker',
+			$this->subject
+		);
+	}
 }

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-	<file source-language="en" datatype="plaintext" original="messages" date="2015-11-06T06:44:24Z" product-name="qxaddress">
+	<file source-language="en" datatype="plaintext" original="messages" date="2015-11-08T15:04:40Z" product-name="qxaddress">
 		<header/>
 		<body>
 			<trans-unit id="name.description">
@@ -11,6 +11,9 @@
 			</trans-unit>
 			<trans-unit id="longitude.description">
 				<source>longitude</source>
+			</trans-unit>
+			<trans-unit id="marker.description">
+				<source>marker</source>
 			</trans-unit>
 		</body>
 	</file>
