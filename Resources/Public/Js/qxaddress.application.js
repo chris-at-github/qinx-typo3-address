@@ -13,7 +13,8 @@ $(function() {
 				lat: 47.636896,
 				lng: 11.231763
 			},
-			zoom: 15
+			zoom: 15,
+			scrollwheel: false
 		});
 
 		var markers = [];
